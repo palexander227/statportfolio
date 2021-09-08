@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    box-sizing: border-box;    
+}
+
+body {
+    background: #ddd;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    background: #444;
+    color: #ddd;
+}
+
+nav a{
+    padding: .5rem .25rem;
+    margin-left: 1rem;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    }
+
+nav a:hover{
+    background: #bbb;
+}
+
+#banner{
+    background: #888;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+    min-height: 5rem;
+    width: 100%;
+}
+
+#banner p{
+    background: #444;
+    color: #ddd;
+    padding: 1rem;
+}
