@@ -98,21 +98,37 @@ nav a:hover{
     justify-content: flex-start;
     align-items: flex-end;
     flex: 1;
+    overflow: hidden;
+    position: relative;
+
+}
+.project::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background-position: center center;
     background-size: cover;
-    backdrop-filter: grayscale(20%);
+    filter: grayscale(90%);
+    z-index:0;
+    transition: .3s;
 }
-.project1{background-image: url('http://placekitten.com/1600/900')}
 
-.project:hover{
-    backdrop-filter: grayscale(0%);
+.project:hover::before{
+    filter: grayscale(0%);
 }
 .project p{
     background: #20c;
     padding: 1rem;
     margin-bottom: 1rem;
     color: #fff;
+    z-index:1;
 }
+.project1::before{background-image: url('http://placekitten.com/1600/900')}
+.project2::before{background-image: url('http://placekitten.com/1500/900')}
+.project3::before{background-image: url('http://placekitten.com/1300/800')}
+.project4::before{background-image: url('http://placekitten.com/1600/800')}
+.project5::before{background-image: url('http://placekitten.com/1200/600')}
 
 .large{
     min-height: 40vw;
