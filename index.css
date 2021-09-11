@@ -9,7 +9,12 @@ body {
     background: #ddd;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 } 
-
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat, sans-serif;
+}
+h1{
+    font-weight: normal;
+}
 nav {
     display: flex;
     width: 100%;
@@ -23,24 +28,29 @@ nav {
 nav a{
     padding: .25rem .5rem;
     margin-left: 1rem;
-    background: #ddd;
-    color: #444;
+
+    background: #FFF;
+    color: #20c;
     text-decoration: none;
+    transition: .3s;
     }
 
 nav a:hover{
-    background: #bbb;
+    background: #20c;
+    color: #FFF;
 }
 
 #title{
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 #icon{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    border: 1px solid #fff;
     background-image: url("img/profile.jpg");
     background-size: cover;
     background-position: center center;
@@ -50,7 +60,8 @@ nav a:hover{
 
 
 #banner{
-    background: #888;
+    background-image: url('img/data-science-biovia_0b0c4749f4.jpg');
+    background-size: cover;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -59,10 +70,13 @@ nav a:hover{
     width: 100%;
 }
 
-#banner p{
-    background: #444;
-    color: #ddd;
+#banner i{
+    background: #20c8;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200;
     padding: 1rem;
+    border-radius: 4px;
 }
 
 #layout {
@@ -151,16 +165,44 @@ nav a:hover{
 }
 
 .contact-row {
-    padding: 0 1rem;
+    padding-left:  1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
-}
+   }
 
 .contact-item {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
+    padding: .5rem;
+    border: 3px solid #20c;
+}
+
+@media only screen and (max-width: 900px) {
+   .row, .contact-row{
+       flex-direction: column;
+   } 
+   .row h2 {
+       border: 0px solid white;
+       width: 100%;
+       text-align: center;
+   }
+
+   .contact-item {
+       width: 100%;
+       margin-top: 1rem;
+   }
+
+   #nav-buttons{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+   }
+
+   #nav-buttons a {
+       margin-top: 5px;
+
+   }
 }
