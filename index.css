@@ -32,6 +32,23 @@ nav a:hover{
     background: #bbb;
 }
 
+#title{
+    display: flex;
+    align-items: center;
+}
+
+#icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-image: url("img/profile.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-right: 1rem;
+}
+
+
+
 #banner{
     background: #888;
     display: flex;
@@ -124,13 +141,26 @@ nav a:hover{
     color: #fff;
     z-index:1;
 }
-.project1::before{background-image: url('http://placekitten.com/1600/900')}
-.project2::before{background-image: url('http://placekitten.com/1500/900')}
-.project3::before{background-image: url('http://placekitten.com/1300/800')}
-.project4::before{background-image: url('http://placekitten.com/1600/800')}
-.project5::before{background-image: url('http://placekitten.com/1200/600')}
+.project1::before{background-image: url('img/tm-workshop.png')}
+.project2::before{background-image: url('img/notetakerapp.png')}
+.project3::before{background-image: url('img/thoughtmuseumwebsite.png')}
 
 .large{
     min-height: 40vw;
     margin-top: 0;
+}
+
+.contact-row {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.contact-item {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
 }
