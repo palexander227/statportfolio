@@ -6,4 +6,13 @@ A portfolio of work can showcase skills and talents to employers looking to fill
 
 ## Contact
 
-I am happy to share this and/or modify for anyone who might be interested in using this template.
+I am happy to share this and/or modify for anyone who might be interested in using this template. 
+
+To view the portfolio and get a feel for the actual functionality, you can see it here on vercel: [StatPortfolio](https://statportfolio.vercel.app/)
+
+Some screen shots (without functionality):
+![image](https://user-images.githubusercontent.com/80119915/133656049-be417e66-dff2-44b5-95a6-5a14650be047.png)
+
+![image](https://user-images.githubusercontent.com/80119915/133656108-70fcc09f-b772-4295-8c79-3d33b4d80db5.png)
+
+
